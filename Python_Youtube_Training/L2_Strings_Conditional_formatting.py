@@ -86,6 +86,46 @@ elif(condition):
 else(condition):
     StatementN
 """
-age = 17
+
+age = 27
 if(age >= 18):
     print("Eligible to apply for voter card")
+
+Signal = "Green"
+
+if(Signal == "Red"):
+    print("Stop the car")       # Indentation (Proper spacing) is the space we give to continue the code and identify it as part of the continued code in previous line.
+elif(Signal == "Yellow"):
+    print("Look Around")
+if(Signal == "Green"):
+    print("Go")
+
+# Note - "=" single equal is used to assign values to a variable (assign operator). "==" double equal is used to compare value to see if they are same (equal comparison operator)
+
+"""
+"If" condition will be always checked by Python while running the code. "elif" will only be checked if the "if" condition is not fulfilled. "else" statement is written at last. No condition
+is chedcked at all as if other conditions fail, then the value assigned to else function will reflect. It is only used once.
+"""
+
+marks = int(input("Enter your marks: "))
+
+if(marks > 90):
+    Grade = "A"
+elif(marks >= 80 and marks < 90):
+    Grade = "B"
+elif(marks >= 70 and marks < 80):
+    Grade = "C"
+else:
+    Grade = "D"
+
+print("Grade of the student -> ", Grade)
+
+
+assigned_number = 15
+
+if((input("Enter your number = ") > assigned_number)):
+    print("Entered number greater than assigned number.")
+elif((input("Enter your number = ") == assigned_number)):
+    print("Entered number equal to assigned number.")
+else:
+    print("Entered number lesser than assigned number.")
